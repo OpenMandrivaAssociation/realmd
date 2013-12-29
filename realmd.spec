@@ -1,9 +1,9 @@
+Summary:	Kerberos realm enrollment service
 Name:		realmd
 Version:	0.14.6
 Release:	1
-Summary:	Kerberos realm enrollment service
 License:	LGPLv2+
-URL:		http://cgit.freedesktop.org/realmd/realmd/
+URL:		http://www.freedesktop.org/software/realmd/
 Source0:	http://www.freedesktop.org/software/realmd/releases/realmd-%{version}.tar.gz
 
 BuildRequires:	intltool
@@ -35,12 +35,12 @@ Summary:	Developer documentation files for %{name}
 The %{name}-devel package contains developer documentation for developing
 applications that use %{name}.
 
-%define _hardened_build 1
 
 %prep
 %setup -q
 
 %build
+%serverbuild_hardened
 %configure2_5x
 %make
 
