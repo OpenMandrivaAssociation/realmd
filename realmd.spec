@@ -1,7 +1,7 @@
 Summary:	Kerberos realm enrollment service
 Name:		realmd
 Version:	0.15.0
-Release:	2
+Release:	3
 License:	LGPLv2+
 Group:		System/Configuration/Networking
 URL:		http://www.freedesktop.org/software/realmd/
