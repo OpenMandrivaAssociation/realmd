@@ -4,23 +4,21 @@ Version:	0.15.0
 Release:	2
 License:	LGPLv2+
 Group:		System/Configuration/Networking
-URL:		http://www.freedesktop.org/software/realmd/
+Url:		http://www.freedesktop.org/software/realmd/
 Source0:	http://www.freedesktop.org/software/realmd/releases/realmd-%{version}.tar.gz
 
+BuildRequires:	gtk-doc
 BuildRequires:	intltool
-BuildRequires:	pkgconfig
+BuildRequires:	xmlto
 BuildRequires:	gettext-devel
-BuildRequires:	pkgconfig(glib-2.0) >= 2.33.0
+BuildRequires:	krb5-devel
 BuildRequires:	pkgconfig(gio-2.0) >= 2.33.0
 BuildRequires:	pkgconfig(gio-unix-2.0) >= 2.33.0
+BuildRequires:	pkgconfig(glib-2.0) >= 2.33.0
+BuildRequires:	pkgconfig(libsystemd-journal)
 BuildRequires:	pkgconfig(packagekit-glib2)
 BuildRequires:	pkgconfig(polkit-gobject-1)
 BuildRequires:	pkgconfig(systemd)
-BuildRequires:	pkgconfig(libsystemd-journal)
-BuildRequires:	krb5-devel
-BuildRequires:	gtk-doc
-BuildRequires:	xmlto
-
 
 %description
 realmd is a DBus system service which manages
@@ -35,7 +33,6 @@ Summary:	Developer documentation files for %{name}
 %description devel-docs
 The %{name}-devel package contains developer documentation for developing
 applications that use %{name}.
-
 
 %prep
 %setup -q
@@ -70,3 +67,4 @@ make check
 %files devel-docs
 %doc AUTHORS COPYING ChangeLog NEWS README
 %doc %{_datadir}/doc/realmd/
+
