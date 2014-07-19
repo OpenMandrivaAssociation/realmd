@@ -19,6 +19,7 @@ BuildRequires:	pkgconfig(libsystemd-journal)
 BuildRequires:	pkgconfig(packagekit-glib2)
 BuildRequires:	pkgconfig(polkit-gobject-1)
 BuildRequires:	pkgconfig(systemd)
+Requires:		authconfig
 
 %description
 realmd is a DBus system service which manages
@@ -39,7 +40,7 @@ applications that use %{name}.
 
 %build
 %serverbuild_hardened
-%configure2_5x
+%configure
 %make
 
 %check
