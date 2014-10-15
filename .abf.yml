@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   realmd-0.15.0.tar.gz: f026582227b30ef62d591127fac2623fb5a60ccd
+sources:
+  realmd-0.15.2.tar.gz: b93fdba99b3011e7265b7f0246190e9685aaf701
