@@ -1,7 +1,7 @@
 Summary:	Kerberos realm enrollment service
 Name:		realmd
-Version:	0.15.0
-Release:	5
+Version:	0.15.2
+Release:	1
 License:	LGPLv2+
 Group:		System/Configuration/Networking
 Url:		http://www.freedesktop.org/software/realmd/
@@ -37,6 +37,7 @@ applications that use %{name}.
 
 %prep
 %setup -q
+sed -i 's|/usr/bin/python|/usr/bin/python2|' build/tap-driver build/tap-gtester
 
 %build
 %serverbuild_hardened
