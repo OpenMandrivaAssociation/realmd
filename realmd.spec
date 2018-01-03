@@ -1,7 +1,7 @@
 Summary:	Kerberos realm enrollment service
 Name:		realmd
-Version:	0.16.0
-Release:	2
+Version:	0.16.3
+Release:	1
 License:	LGPLv2+
 Group:		System/Configuration/Networking
 Url:		http://www.freedesktop.org/software/realmd/
@@ -50,6 +50,11 @@ make check
 %install
 %makeinstall_std
 
+install -d %{buildroot}%{_presetdir}
+cat > %{buildroot}%{_presetdir}/86-%{name}.preset << EOF
+enable %{name}.service
+EOF
+
 %find_lang realmd
 
 %files -f realmd.lang
@@ -59,6 +64,7 @@ make check
 %{_libdir}/realmd/realmd
 %{_libdir}/realmd/realmd-defaults.conf
 %{_libdir}/realmd/realmd-distro.conf
+%{_presetdir}/86-%{name}.preset
 %{_unitdir}/realmd.service
 %{_datadir}/dbus-1/system-services/org.freedesktop.realmd.service
 %{_datadir}/polkit-1/actions/org.freedesktop.realmd.policy
