@@ -60,10 +60,10 @@ EOF
 %files -f realmd.lang
 %{_sysconfdir}/dbus-1/system.d/org.freedesktop.realmd.conf
 %{_sbindir}/realm
-%dir %{_libdir}/realmd
-%{_libdir}/realmd/realmd
-%{_libdir}/realmd/realmd-defaults.conf
-%{_libdir}/realmd/realmd-distro.conf
+%dir %{_prefix}/lib/realmd
+%{_prefix}/lib/realmd/realmd
+%{_prefix}/lib/realmd/realmd-defaults.conf
+%{_prefix}/lib/realmd/realmd-distro.conf
 %{_presetdir}/86-%{name}.preset
 %{_unitdir}/realmd.service
 %{_datadir}/dbus-1/system-services/org.freedesktop.realmd.service
