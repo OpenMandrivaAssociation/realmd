@@ -15,11 +15,11 @@ BuildRequires:	krb5-devel
 BuildRequires:	pkgconfig(gio-2.0) >= 2.33.0
 BuildRequires:	pkgconfig(gio-unix-2.0) >= 2.33.0
 BuildRequires:	pkgconfig(glib-2.0) >= 2.33.0
-BuildRequires:	pkgconfig(libsystemd-journal)
 BuildRequires:	pkgconfig(packagekit-glib2)
 BuildRequires:	pkgconfig(polkit-gobject-1)
 BuildRequires:	pkgconfig(systemd)
 Requires:		authconfig
+Requires:		adcli
 
 %description
 realmd is a DBus system service which manages
