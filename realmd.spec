@@ -12,6 +12,7 @@ BuildRequires:	intltool
 BuildRequires:	xmlto
 BuildRequires:	gettext-devel
 BuildRequires:	krb5-devel
+BuildRequires:	openldap-devel
 BuildRequires:	pkgconfig(gio-2.0) >= 2.33.0
 BuildRequires:	pkgconfig(gio-unix-2.0) >= 2.33.0
 BuildRequires:	pkgconfig(glib-2.0) >= 2.33.0
