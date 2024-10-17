@@ -4,7 +4,7 @@ Version:	0.16.3
 Release:	3
 License:	LGPLv2+
 Group:		System/Configuration/Networking
-Url:		http://www.freedesktop.org/software/realmd/
+Url:		https://www.freedesktop.org/software/realmd/
 Source0:	http://www.freedesktop.org/software/realmd/releases/realmd-%{version}.tar.gz
 
 BuildRequires:	gtk-doc
