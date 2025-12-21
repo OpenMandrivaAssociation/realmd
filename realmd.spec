@@ -7,6 +7,11 @@ Group:		System/Configuration/Networking
 Url:		https://www.freedesktop.org/software/realmd/
 Source0:	http://www.freedesktop.org/software/realmd/releases/realmd-%{version}.tar.gz
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	gtk-doc
 BuildRequires:	intltool
 BuildRequires:	xmlto
